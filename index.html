@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Owen Bredenhorst</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href='https://fonts.googleapis.com/css?family=Jaldi:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/main.js"></script> 
+	<script src="js/index.js"></script> 
+	
+</head>
+
+    <body>	
+		<div id="banner">
+		<div id="imgbanner">
+			<h1>Owen Bredenhorst</h1>
+			</div>
+
+	<div id="navbar">
+		<ul class="cd-accordion-menu animated">
+			<li class="has-children">
+				<input type="checkbox" name ="group-1" id="group-1" >
+				<label for="group-1">click here for Menu</label>
+
+				<ul>
+					<li class="has-children">
+						<input type="checkbox" name ="sub-group-1" id="sub-group-1">
+						<label for="sub-group-1">School Project</label>
+
+						<ul>
+							<li><a href="#0">CMS- Project</a></li>
+							<li><a href="#0">Webshop</a></li>
+							<li><a href="#0">C# App</a></li>
+							<li><a href="#0">Web-Applicatie</a></li>
+							<li><a href="#0">App</a></li>
+						</ul>
+					</li>
+					<li class="has-children">
+						<input type="checkbox" name ="sub-group-2" id="sub-group-2">
+						<label for="sub-group-2">Stage</label>
+
+						<ul>
+							<li><a href="#0">LinStage</a></li>
+							<li><a href="#0">BlokStage</a></li>
+							<li><a href="#0">EindStage</a></li>
+						</ul>
+					</li>
+							<li class="has-children">
+						<input type="checkbox" name ="sub-group-3" id="sub-group-3">
+						<label for="sub-group-3">Ik zelf</label>
+
+						<ul>
+							<li><a href="#0">keuzedelen</a></li>
+							<li><a href="#0">Portfolio</a></li>
+							<li><a href="#0">Mijn Eigen Projecten</a></li>
+							
+						</ul>
+					</li>
+					<li class="has-children">
+						<input type="checkbox" name ="sub-group-4" id="sub-group-4">
+						<label for="sub-group-4">Mijn Projecten</label>
+
+						<ul>
+							<li><a href="#0">Blender</a></li>
+							<li><a href="#0">Photoshop</a></li>
+							<li><a href="#0">Websites</a></li>
+							<li><a href="#0">Programma's</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul> 
+
+	<video autoplay loop id="video-background" muted plays-inline>
+	  <source src="video/background.mp4" type="video/mp4">
+	</video>
+
+	</div>
+		</div>
+			<div id="text1">
+			<center>
+				<img src="img/foto.png" alt="logopic">
+					<center>
+						<h2>Mijn naam is Owen Bredenhorst</h2>
+						<h3>En dit is mijn website!</h3>
+						<button class="button" style="vertical-align:middle"><span>click hier voor meer info</span></button>
+					</center>
+				</div>
+			<div id="text2">
+				<div id="text2in1">
+					<img src="img/foto2.png" alt="logopic">
+					<h2>Mijn naam is Owen Bredenhorst en dit is mijn website</h2>
+					<h1>Ik heb in de 3 jaar dat op de MBO heb gezeten Projecten gemaakt. Op mijn website kan je de Project bekijken en zelf gebruiken voor inspiratie.</h1>
+					<h1>Heb je vragen of hulp nodig met website maken neem contact met mij op!</h1>
+				
+					<center>
+				<div id="text2in1">
+				
+						<p> Dit zijn projecten waar ik aan heb gewerkt</p>
+				</center>
+					</div>
+			<div id="fotocon">
+		<base >
+					<div id="carousel">
+					  <figure id="spinner">
+						<img src="img/1.jpg" alt>
+						<img src="img/2.jpg" alt>
+						<img src="img/1.jpg" alt>
+						<img src="img/2.jpg" alt>
+						<img src="img/1.jpg" alt>
+						<img src="img/2.jpg" alt>
+						<img src="img/1.jpg" alt>
+						<img src="img/2.jpg" alt>
+					  </figure>
+					</div>
+				<span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+				<span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+		</div>
+		</div>
+		</div>
+		
+	</body>
+
+<html>
+	<script>
+			 var angle = 0;
+			function galleryspin(sign) { 
+			spinner = document.querySelector("#spinner");
+			if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+			spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+			}
+	</script>
+
